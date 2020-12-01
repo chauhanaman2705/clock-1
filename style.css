@@ -1,0 +1,110 @@
+.clockFace{
+    border: 40px solid rgb(101 13 13 / 43%);
+    background: radial-gradient(#b64141, #030303);
+    height: 570px;
+    width: 570px;
+    border-radius:50%;
+    margin: auto;
+    position: relative;
+}
+.secHand{
+    border: 1px solid black;
+    height:250px;
+    position: absolute;
+    right:50%;
+    bottom: 50%;
+    z-index: 5;
+    transform-origin: bottom right;
+    /* transition: transform 1s linear; */
+}
+.minHand{
+    border: 2px solid silver;
+    height: 225px;
+    position: absolute;
+    transform-origin: bottom right;
+    right:50%;
+    bottom: 50%;
+}
+.hrHand{
+    border: 3px solid silver;
+    height: 180px;
+    position: absolute;
+    transform-origin: bottom right;
+    right:50%;
+    bottom: 50%;
+}
+.name{
+    position:absolute;
+    top: 30%;
+    left:47%;
+    color: rgb(160, 151, 151);
+    z-index: 0;
+}
+.c12,.c1, .c2, .c3, .c4, .c5, .c6 ,.c7, .c8, .c9, .c10, .c11{
+    font-size: 30px;
+    /* border: 1px solid black; */
+    position: absolute;
+    color: white;
+    height:260px;
+    bottom: 50%;
+    right: 50%;
+    transform-origin : bottom right;
+}
+.c12{
+    transform: rotate(0deg);
+}
+.c1{
+    transform: rotate(30deg);
+}
+.c2{
+    transform: rotate(60deg);
+}
+.c3{
+    transform: rotate(90deg);
+}
+.c4{
+    transform: rotate(120deg);
+}
+.c5{
+    transform: rotate(150deg);
+}
+.c6{
+    transform: rotate(180deg);
+}
+.c7{
+    transform: rotate(210deg);
+}
+.c8{
+    transform: rotate(240deg);
+}
+.c9{
+    transform: rotate(270deg);
+}
+.c10{
+    transform: rotate(300deg);
+}
+.c11{
+    transform: rotate(330deg);
+}
+
+
+
+@media screen and (max-width:400px){
+    .clockFace{
+        height: 300px;
+        width: 300px;
+    }
+.hrHand{
+    height: 80px;
+}
+.secHand{
+    height: 130px;
+}
+.minHand{
+    height: 110px;
+}
+.c12,.c1, .c2, .c3, .c4, .c5, .c6 ,.c7, .c8, .c9, .c10, .c11{
+    height:151px;
+}
+
+} 
