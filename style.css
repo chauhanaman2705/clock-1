@@ -129,7 +129,7 @@
 .c11{
     transform: rotate(330deg);
 }
-@media screen and (max-width:400px){
+@media screen and (max-width:600px){
     .clockFace{
         height: 300px;
         width: 300px;
