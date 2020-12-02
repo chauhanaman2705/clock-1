@@ -1,5 +1,5 @@
 .clockFace{
-    border: 40px solid rgb(101 13 13 / 43%);
+    border: 40px inset rgb(101 13 13 / 43%);
     background: radial-gradient(#b64141, #030303);
     height: 570px;
     width: 570px;
@@ -14,8 +14,7 @@
     right:50%;
     bottom: 50%;
     z-index: 5;
-    transform-origin: bottom right;
-    /* transition: transform 1s linear; */
+    transform-origin: bottom right;    
 }
 .minHand{
     border: 2px solid silver;
@@ -23,6 +22,7 @@
     position: absolute;
     transform-origin: bottom right;
     right:50%;
+    z-index: 3;
     bottom: 50%;
 }
 .hrHand{
@@ -31,7 +31,49 @@
     position: absolute;
     transform-origin: bottom right;
     right:50%;
+    z-index: 3;
     bottom: 50%;
+}
+.center{
+    background-color: black;
+    height:22px;
+    position: absolute;
+    top:48%;
+    left:48%;
+    width: 22px;
+    z-index: 6;
+    border-radius: 50%;
+}
+#wDay{
+    position: absolute;
+    top:19%;
+    left: 39%;
+}
+#month{
+    position: absolute;
+    top:45%;
+    left: 50%;
+}
+#date{
+    position: absolute;
+    top:45%;
+    left: 34%;
+}
+#year{
+    position: absolute;
+    top:67%;
+    left: 38%;
+}
+.center1{
+    background-color: #21111124;
+    color:#7d7c77;
+    border: 2px inset brown ;
+    height:120px;
+    width: 120px;
+    position: absolute;
+    top:40%;
+    left:60%;    
+    border-radius: 50%;    
 }
 .name{
     position:absolute;
@@ -48,6 +90,7 @@
     height:260px;
     bottom: 50%;
     right: 50%;
+    width: 20px;
     transform-origin : bottom right;
 }
 .c12{
@@ -86,13 +129,11 @@
 .c11{
     transform: rotate(330deg);
 }
-
-
-
 @media screen and (max-width:400px){
     .clockFace{
         height: 300px;
         width: 300px;
+        margin-top: 30%;
     }
 .hrHand{
     height: 80px;
@@ -104,7 +145,30 @@
     height: 110px;
 }
 .c12,.c1, .c2, .c3, .c4, .c5, .c6 ,.c7, .c8, .c9, .c10, .c11{
-    height:151px;
+    height:140px;
+    width:20px;
 }
-
+.name{
+    left:43%;
+}
+.center1{
+    height:60px;
+    width: 60px;
+}
+#wDay{
+    top:10%;
+    left: 25%;
+}
+#month{
+    top:40%;
+    left: 40%;
+}
+#date{
+    top:40%;
+    left: 25%;
+}
+#year{
+    top:67%;
+    left: 25%;
+}
 } 
