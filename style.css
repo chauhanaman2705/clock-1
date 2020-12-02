@@ -44,25 +44,36 @@
     z-index: 6;
     border-radius: 50%;
 }
+#hr{
+    position: absolute;
+    top:37%;
+    left: 7%;
+    font-size:30px;
+}
 #wDay{
     position: absolute;
-    top:19%;
-    left: 39%;
+    top:7%;
+    left: 27%;
+    font-size:30px;
 }
 #month{
     position: absolute;
-    top:45%;
-    left: 50%;
+    top:35%;
+    font-size:30px;
+    left: 45%;
 }
 #date{
     position: absolute;
-    top:45%;
-    left: 34%;
+    top:35%;
+    font-size:30px;
+    left: 20%;
 }
 #year{
     position: absolute;
     top:67%;
-    left: 38%;
+    left: 28%;
+    font-size:30px;
+
 }
 .center1{
     background-color: #21111124;
@@ -73,6 +84,17 @@
     position: absolute;
     top:40%;
     left:60%;    
+    border-radius: 50%;    
+}
+.center2{
+    background-color: #21111124;
+    color:#7d7c77;
+    border: 2px inset brown ;
+    height:120px;
+    width: 120px;
+    position: absolute;
+    top:40%;
+    left:20%;    
     border-radius: 50%;    
 }
 .name{
@@ -156,20 +178,31 @@
     height:60px;
     width: 60px;
 }
+.center2{
+    height:60px;
+    width: 60px;
+}
 #wDay{
     top:10%;
     left: 25%;
+    font-size: 15px;
 }
 #month{
     top:40%;
     left: 40%;
+    font-size: 15px;
 }
 #date{
     top:40%;
     left: 25%;
+    font-size: 15px;
 }
 #year{
     top:67%;
     left: 25%;
+    font-size: 15px;
+}
+#hr{
+    font-size: 15px;
 }
 } 

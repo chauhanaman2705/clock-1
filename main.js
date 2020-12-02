@@ -44,7 +44,8 @@ function clock(){
             month1="Feb";
             break;
         case(2):
-            month1="Mar";
+document.querySelector("#year").innerHTML=year;
+month1="Mar";
             break;
         case(3):
             month1="Apr";
@@ -79,6 +80,7 @@ document.querySelector("#wDay").innerHTML=weekday;
 document.querySelector("#date").innerHTML=Cdate;
 document.querySelector("#month").innerHTML=month1;
 document.querySelector("#year").innerHTML=year;
+document.querySelector("#hr").innerHTML=hour+":"+min+":"+sec;
 document.querySelector(".hrHand").style.transform = "rotate("+rotateHour+"deg)";
 document.querySelector(".minHand").style.transform = "rotate("+rotateMin+"deg)";
 document.querySelector(".secHand").style.transform = "rotate("+rotateSec+"deg)";
