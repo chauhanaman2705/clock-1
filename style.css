@@ -131,6 +131,7 @@
 }
 @media screen and (max-width:600px){
     .clockFace{
+        border: 20px inset rgb(101 13 13 / 43%);
         height: 300px;
         width: 300px;
         margin-top: 30%;
@@ -145,7 +146,7 @@
     height: 110px;
 }
 .c12,.c1, .c2, .c3, .c4, .c5, .c6 ,.c7, .c8, .c9, .c10, .c11{
-    height:140px;
+    height:148px;
     width:20px;
 }
 .name{
