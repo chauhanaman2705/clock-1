@@ -11,6 +11,7 @@
     border: 1px solid black;
     height:250px;
     position: absolute;
+    border-radius:50% 50% 0% 0%;
     right:50%;
     bottom: 50%;
     z-index: 5;
@@ -20,6 +21,7 @@
     border: 2px solid silver;
     height: 225px;
     position: absolute;
+    border-radius:50% 50% 0% 0%;
     transform-origin: bottom right;
     right:50%;
     z-index: 3;
@@ -30,6 +32,7 @@
     height: 180px;
     position: absolute;
     transform-origin: bottom right;
+    border-radius:50% 50% 0% 0%;
     right:50%;
     z-index: 3;
     bottom: 50%;
