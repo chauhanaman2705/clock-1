@@ -76,6 +76,7 @@ month1="Mar";
             break;
        
     }
+
 document.querySelector("#wDay").innerHTML=weekday;
 document.querySelector("#date").innerHTML=Cdate;
 document.querySelector("#month").innerHTML=month1;
@@ -84,4 +85,15 @@ document.querySelector("#hr").innerHTML=hour+":"+min+":"+sec;
 document.querySelector(".hrHand").style.transform = "rotate("+rotateHour+"deg)";
 document.querySelector(".minHand").style.transform = "rotate("+rotateMin+"deg)";
 document.querySelector(".secHand").style.transform = "rotate("+rotateSec+"deg)";
+var almhr=document.getElementById("alarmhr").value;
+var almmin=document.getElementById("alarmmin").value;
+console.log(almhr);
+console.log(almmin);
+if((almhr == hour)&&(almmin == min) )
+{
+     shake();
+}
+}
+function shake(){
+    document.querySelector(".clockFace").style.animation = "shake 0.5s";
 }

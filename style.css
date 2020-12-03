@@ -6,22 +6,37 @@
     border-radius:50%;
     margin: auto;
     position: relative;
+    animation-iteration-count: infinite;
 }
+@keyframes shake {
+        0% { transform: translate(1px, 1px) rotate(0deg); }
+        10% { transform: translate(-1px, -2px) rotate(-2deg); }
+        20% { transform: translate(-3px, 0px) rotate(2deg); }
+        30% { transform: translate(3px, 2px) rotate(0deg); }
+        40% { transform: translate(1px, -1px) rotate(2deg); }
+        50% { transform: translate(-1px, 2px) rotate(-2deg); }
+        60% { transform: translate(-3px, 1px) rotate(0deg); }
+        70% { transform: translate(3px, 1px) rotate(-2deg); }
+        80% { transform: translate(-1px, -1px) rotate(2deg); }
+        90% { transform: translate(1px, 2px) rotate(0deg); }
+        100% { transform: translate(1px, -2px) rotate(-2deg); }
+}
+
 .secHand{
     border: 1px solid black;
     height:250px;
     position: absolute;
-    border-radius:50% 50% 0% 0%;
     right:50%;
     bottom: 50%;
+    border-radius:50% 50% 0% 0%;
     z-index: 5;
     transform-origin: bottom right;    
 }
 .minHand{
     border: 2px solid silver;
+    border-radius:50% 50% 0% 0%;
     height: 225px;
     position: absolute;
-    border-radius:50% 50% 0% 0%;
     transform-origin: bottom right;
     right:50%;
     z-index: 3;
@@ -30,9 +45,9 @@
 .hrHand{
     border: 3px solid silver;
     height: 180px;
+    border-radius:50% 50% 0% 0%;
     position: absolute;
     transform-origin: bottom right;
-    border-radius:50% 50% 0% 0%;
     right:50%;
     z-index: 3;
     bottom: 50%;
@@ -99,6 +114,33 @@
     top:40%;
     left:20%;    
     border-radius: 50%;    
+}
+.center3{
+    background-color: #21111124;
+    color:#7d7c77;
+    border: 2px inset brown ;
+    height:120px;
+    width: 120px;
+    position: absolute;
+    top:60%;
+    left:40%;    
+    border-radius: 50%;
+
+}
+#alarmhr{
+    max-width: 30%;
+    background-color: #21111124;
+    position: absolute;
+    top: 43%;
+    left:10%
+    
+}
+#alarmmin{
+    max-width: 30%;
+    background-color: #21111124;
+    position: absolute;
+    top: 43%;
+    left:50%
 }
 .name{
     position:absolute;
@@ -177,11 +219,7 @@
 .name{
     left:43%;
 }
-.center1{
-    height:60px;
-    width: 60px;
-}
-.center2{
+.center1, .center2, .center3{
     height:60px;
     width: 60px;
 }
